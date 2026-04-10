@@ -1,8 +1,7 @@
 function getAllAnimalsByLetter(letter) {
-  let offset = 0;
   let allResults = [];
 
-  const url = `https://api.api-ninjas.com/v1/animals?name=${letter}&offset=${offset}`;
+  const url = `https://api.api-ninjas.com/v1/animals?name=${letter}`;
   return fetch(url, {
     headers: { "X-Api-Key": "YOUR-API-KEY" },
   })
